@@ -57,6 +57,10 @@ Every individual task directory contains its README, required source/project fil
 
 The folder numbers follow the week-wise sequence supplied for the course. For example, the HTTP-server work is stored under CAT11 (Week 11), even where an individual assignment sheet carries an earlier CAT10C label.
 
+## CAT15 project scope
+
+CAT15 is the Week 15 integrated IoT project. The repository includes the embedded STM32/BME280/ESP8266-MQTT project and its circuit diagram. The Node-RED flow export, dashboard configuration and API-server source are not included in the current upload; the CAT15 README identifies these as separate application-side deliverables. Add the actual files if they are required by the faculty's Week 15 rubric.
+
 ## README documentation standard
 
 Each task README records the information requested in the assessment sample:
