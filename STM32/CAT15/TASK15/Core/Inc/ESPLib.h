@@ -16,7 +16,7 @@
 #include "stm32f4xx_hal.h"
 
 
-#define BUFFERSIZE 100
+#define BUFFERSIZE 256
 
 extern uint8_t uartRxData;
 extern uint16_t DataCounter;

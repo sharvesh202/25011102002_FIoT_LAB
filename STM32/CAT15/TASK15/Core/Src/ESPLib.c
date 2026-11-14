@@ -6,7 +6,7 @@
  */
 
 #include "ESPLib.h"
-
+#include "main.h"
 // Instantiate the global variables to resolve L6218E errors
 uint8_t uartRxData = 0;
 uint16_t DataCounter = 0;
@@ -327,7 +327,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	RxInterruptFlag = SET;
 	mqttBuffer[DataCounter++] = uartRxData;
-	if(DataCounter >= 300)
+	if(DataCounter >= BUFFERSIZE)
 	{
 		DataCounter  = 0;
 	}
