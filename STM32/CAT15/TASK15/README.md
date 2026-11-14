@@ -14,10 +14,6 @@
 
 ---
 
-**REGISTRATION NUMBER:** `25011102002`
-
-**TASK NO:** `TASK15`
-
 # CAT 15 – Integrated IoT Monitoring and API Workflow
 
 ## Aim
@@ -74,7 +70,7 @@ Connect UART TX to the other device's RX, connect RX to TX, and ensure all conne
 
 ![Circuit Diagram](circuit.png)
 
-## Firmware Workflow
+## Core Logic / Firmware Workflow
 
 1. The STM32 checks the BME280 at I2C address `0x76` and then `0x77`.
 2. The Bosch BME280 Sensor API initializes the sensor and reads temperature, pressure and humidity.
@@ -117,7 +113,9 @@ college/weather/bme280
 
 Connect the MQTT input to the required parsing/function nodes, dashboard widgets and API integration nodes. The dashboard can display temperature, pressure and humidity from the JSON payload. The API side can consume or expose the parsed measurements according to the endpoint and method used in the overall project.
 
-**Scope of this upload:** the supplied ZIP contains the STM32 firmware, Keil MDK project, BME280 driver and ESP8266/MQTT library. It does not contain a Node-RED flow export, dashboard configuration or API server source. Those application-side files should be added to this CAT 15 folder if they are maintained separately.
+**Included in this repository:** the STM32 firmware project, Keil MDK files, BME280 driver, ESP8266/MQTT library and the task-level circuit diagram.
+
+**Application-side items not included in this upload:** a Node-RED flow export, dashboard configuration and API-server source. The workflow below documents how the embedded device is intended to integrate with those services; it does not mean those separate application files are already present. If the Week 15 assessment rubric requires them, add the actual exported/configuration/source files before submission. Do not replace them with empty or placeholder files.
 
 ## PuTTY Serial Monitoring
 
